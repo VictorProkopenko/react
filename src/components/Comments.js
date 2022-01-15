@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
+
+import {fetchUsers} from "../services/user.service";
+
 export default function Comments() {
 const [comments, setComments] = useState([]);
 useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/comments')
-        .then(value => value.json())
+        fetchUsers.getComments()
         .then(value => setComments(value))
 },[]);
     return (

@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 
+import {fetchUsers} from "../services/user.service";
+
 export default function Posts() {
 const [posts, setPosts] = useState([]);
 useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-        .then(value => value.json())
+        fetchUsers.getPosts()
         .then(value => setPosts(value))
 },[]);
 
