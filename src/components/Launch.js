@@ -1,11 +1,12 @@
 
 import React, {useEffect, useState} from 'react';
 
+import {fetchLaunces} from "../services/launch.services";
+
 export default function Launch() {
     const [launches, setLaunches] = useState([]);
     useEffect(() => {
-        fetch('https://api.spacexdata.com/v3/launches/')
-            .then(value => value.json())
+        fetchLaunces.getAll()
             .then(value => setLaunches(value.filter(value => value.launch_year !== `2020`)));
     },[]);
 
