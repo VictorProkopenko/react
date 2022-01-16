@@ -21,7 +21,7 @@ useEffect(() => {
                         Address street: {value.address.street}, suite: {value.address.suite},
                         city: {value.address.city}, zip: {value.address.zipcode},
                         Company Name: {value.company.name} , Catch: {value.company.catchPhrase} ,
-                        Bs: {value.company.bs} <br /> .
+                        Bs: {value.company.bs} <br />  *
                     </div>)
                 }
 

@@ -2,30 +2,33 @@
 .app {
     display: flex;
     text-align: center;
+    position: relative;
+    flex-wrap:wrap;
 }
 .users {
-    width: 35%;
+    width: 47%;
     flex-grow: 1;
     float:left;
     background-color: rgb(207,232,220);
     border: 2px solid rgb(79,185,227);
     padding: 10px;
-    margin: 10px;
+
+    margin:auto;
     border-radius: 5px;
 }
 .posts {
-    width: 40%;
+    width: 47%;
     flex-grow: 1;
     float:right;
     background-color: rgb(207,252,220);
     border: 2px solid rgb(79,185,227);
     padding: 10px;
-    margin: 10px;
+
+    margin:auto;
     border-radius: 5px;
 }
 .comments {
     flex-grow: 1;
-    float:center;
     position:absolute;bottom:0;
     background-color: lightblue;
     border: 2px solid rgb(79,185,227);
