@@ -9,7 +9,6 @@ function App() {
         <div className="App">
             <h2> Homework react 1</h2>
             <Users/>
-            <hr/>
             <Posts/>
             <hr/>
             <Comments/>

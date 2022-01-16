@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-
+import '../App.css';
 import {fetchUsers} from "../services/user.service";
 
 export default function Comments() {
@@ -9,12 +9,12 @@ useEffect(() => {
         .then(value => setComments(value))
 },[]);
     return (
-        <div>
-            <ul>
+        <div >
+
                 {
-                    comments.map(value => <li key={value.id}> {value.name}</li>)
+                    comments.map(value => <div key={value.id}> {value.name}</div>)
                 }
-            </ul>
+
         </div>
     );
 }

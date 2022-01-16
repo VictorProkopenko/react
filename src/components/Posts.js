@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-
+import '../App.css';
 import {fetchUsers} from "../services/user.service";
 
 export default function Posts() {
@@ -10,12 +10,12 @@ useEffect(() => {
 },[]);
 
     return (
-        <div>
-            <ul>
+        <div className='posts'>
+
                 {
-                    posts.map(value => <li key={value.id}> {value.title}</li>)
+                    posts.map(value => <div key={value.id}> {value.title} </div>)
                 }
-            </ul>
+
         </div>
     );
 
