@@ -12,15 +12,19 @@ export default function Launch() {
 
     return (
         <div>
-            <ul>
+
                 {
                     launches.map(value => <div key={value.flight_number}>
-                        <li key={value.flight_number}> {value.mission_name} {value.launch_year}</li>
-                        <img  src={value.links.mission_patch_small} alt={'mission_patch_small'}/>
+                        <div key={value.flight_number}> <img  src={value.links.mission_patch_small} alt={'mission_patch_small'}/>
+                            Mission_name: {value.mission_name} Launch year: {value.launch_year} Rocket: {value.rocket.rocket_name} Rocket type:{value.rocket.rocket_type}
+
+                        </div>
+                        <a href='https://www.youtube.com/watch?v=v0w9p3U8860'> Video </a>
+                        <hr/>
                     </div>)
                 }
-            </ul>
-            <hr/>
+
+
         </div>
     );
 
