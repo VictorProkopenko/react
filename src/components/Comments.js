@@ -9,7 +9,7 @@ useEffect(() => {
         .then(value => setComments(value))
 },[]);
     return (
-        <div >
+        <div className='comments'>
 
                 {
                     comments.map(value => <div key={value.id}> {value.name}</div>)
