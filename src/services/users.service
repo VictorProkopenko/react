@@ -1,0 +1,9 @@
+import AxiosService from './axios.service'
+import Urls from '../services/Urls';
+import axios from "axios";
+
+export const AllUsers = {
+    getAllUsers : () => {
+        AxiosService.get('Urls.Base')
+    }
+}
