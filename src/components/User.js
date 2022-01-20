@@ -5,7 +5,7 @@ const User = ({user}) => {
     console.log(user)
     return (
         <div>
-            {user.id}). Name:{user.name}, Username:{user.username}
+            {user.id}) Name:{user.name}, Username:{user.username}
             , E-mail:{user.email}, Phone:{user.phone}, Website: {user.website},
             Address street: {user.address.street}, Suite: {user.address.suite},
             City: {user.address.city}, Zip: {user.address.zipcode},

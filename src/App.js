@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useEffect, useState} from "react";
+import React from "react";
 import Users from "./components/Users";
 import Posts from "./components/Posts";
 import Comments from "./components/Comments";
