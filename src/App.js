@@ -5,7 +5,7 @@ import Users from "./components/Users/Users";
 import {useState} from "react";
 
 function App() {
-    const [clickUser, setClickUser] = useState(0)
+    const [clickUser, setClickUser] = useState(null)
     const getUser = (clickUser) => {
         setClickUser(clickUser);
     };
