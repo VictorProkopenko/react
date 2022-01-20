@@ -10,7 +10,7 @@ function App() {
                 <Users/>
                 <Details/>
             </div>
-            <div className="Posts"><Posts/></div>
+            {/*<div className="Posts"><Posts/></div>*/}
         </div>
     );
 }
