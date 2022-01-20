@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-import Urls from '../services/Urls';
+//import Urls from '../services/Urls';
 
-const AxiosService = axios.create( {base:Urls.Base} );
+const AxiosService = axios.create({base:'https://jsonplaceholder.typicode.com'});
 
 export default AxiosService;

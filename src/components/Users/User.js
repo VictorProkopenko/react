@@ -1,9 +1,11 @@
-import React from 'react';
+//import React, {useState} from 'react';
 
-const User = () => {
+const User = ({user}) => {
+    const {id, name} = user;
     return (
         <div>
-            User
+            User {id} {name}
+            {console.log(user)}
         </div>
     );
 };
