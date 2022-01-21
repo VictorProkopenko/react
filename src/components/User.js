@@ -2,7 +2,7 @@ import '../App.css';
 import React from 'react';
 
 const User = ({user}) => {
-    console.log(user)
+
     return (
         <div>
             {user.id}) Name:{user.name}, Username:{user.username}
