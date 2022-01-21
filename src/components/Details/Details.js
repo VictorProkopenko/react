@@ -7,7 +7,7 @@ const Details = (user) => {
     return (
         <div>
             Details
-            <div>{id} {name} </div>
+            <div>{name} </div>
         </div>
     );
 };
