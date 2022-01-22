@@ -12,9 +12,9 @@ function App() {
     return (
         <div className="App">
 
-                <Users getUser={getUser}/>
-            <div className="Users"> <Details clickUser = {clickUser}/> </div>
-            <div className="Posts"><Posts/></div>
+                <div className="Users"> <Users getUser={getUser}/> </div>
+                <div className="Users"> <Details clickUser={clickUser}/> </div>
+                <div className="Posts"><Posts/></div>
         </div>
     );
 }
