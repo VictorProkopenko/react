@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Details = (user) => {
+const Details = (clickUser) => {
 
-    const {id, name} = user;
-    console.log(id, name);
-    console.log(user);
+    const name = {clickUser};
+    console.log(name.id);
+    console.log(clickUser);
 
     return (
         <div>
