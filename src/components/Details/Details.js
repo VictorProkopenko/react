@@ -2,8 +2,8 @@ import React from 'react';
 
 const Details = (clickUser) => {
 
-    const name = {clickUser};
-    console.log(name.id);
+    let {id, ...rest} = clickUser;
+    console.log(rest);
     console.log(clickUser);
 
     return (

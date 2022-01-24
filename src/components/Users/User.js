@@ -1,5 +1,4 @@
 import React from 'react';
-import Details from "../Details/Details";
 
 const User = ({user, getUser}) => {
 
