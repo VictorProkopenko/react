@@ -1,0 +1,16 @@
+.App {
+    display: flex;
+    position: relative;
+    flex-wrap:wrap;
+}
+.Users {
+    widthmax: 48%;
+    flex-grow: 1;
+    float:left;
+    column-count: 1;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+    padding: 10px;
+    margin:auto;
+    border-radius: 5px;
+}
