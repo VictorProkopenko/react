@@ -6,7 +6,6 @@ const User = ({user, getUser}) => {
         <div>
             {user.id})  {user.name}  __  <button onClick={()=>getUser(user)}> Details </button>
         </div>
-
     );
 };
 

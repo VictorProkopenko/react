@@ -4,11 +4,12 @@
     position: relative;
     flex-wrap:wrap;
     width: 95%;
+
 }
 .Users {
-    width: 48%;
+    max-width: 48%;
     flex-grow: 1;
-    float:left;
+    float:right;
     column-count: 1;
     background-color: rgb(207,232,220);
     border: 2px solid rgb(79,185,227);
