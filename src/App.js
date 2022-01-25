@@ -14,7 +14,7 @@ function App() {
 
             <div className="Users"><Users getUser={getUser}/></div>
             {clickUser && <div className="Users"><Details clickUser={clickUser}/></div>}
-            <div className="Posts"><Posts/></div>
+            {clickUser && <div className="Posts"><Posts/></div>}
         </div>
     );
 }
