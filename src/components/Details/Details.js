@@ -16,6 +16,7 @@ const Details = ({clickUser},{clickPost} ) => {
             <button onClick={()=> {
                 clickPost = clickUser.id;
                 console.log(clickPost);
+
             } }>Posts</button>
 
         </div>

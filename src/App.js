@@ -11,13 +11,14 @@ function App() {
     };
     const [clickPost, setClickPost] = useState(null)
     const getPost = (clickPost) => {
-        setClickPost(clickPost);
+        setClickPost({clickPost});
     };
     return (
         <div className="App">
             <div className="Users"><Users getUser={getUser}/></div>
             {clickUser && <div className="Users"><Details clickUser={clickUser} clickPost={clickPost}/></div>}
-           <div className="Posts"><Posts clickPost={clickPost}/></div>
+
+            {clickPost && <div className="Posts"><Posts clickPost={clickPost}/></div>}
         </div>
     );
 }
