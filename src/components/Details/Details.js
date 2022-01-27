@@ -1,4 +1,5 @@
 import React from 'react';
+import Posts from "../Posts/Posts";
 
 const Details = ({clickUser},{clickPost} ) => {
 
@@ -15,6 +16,7 @@ const Details = ({clickUser},{clickPost} ) => {
                 Bs: {clickUser.company.bs}</div>
             <button onClick={()=> {
                 clickPost = clickUser.id;
+                <Posts clickPost={clickPost}/>;
                 console.log(clickPost);
 
             } }>Posts</button>
