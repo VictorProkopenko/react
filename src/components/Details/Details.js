@@ -17,7 +17,6 @@ const Details = ({clickUser}) => {
                 geo: lat | lng {clickUser.address.geo.lat} : {clickUser.address.geo.lng} </div>
             <div>Company Name: {clickUser.company.name} , Catch: {clickUser.company.catchPhrase} ,
                 Bs: {clickUser.company.bs}</div>
-            {console.log('Details', count)}
             <Posts count={count} onIncrementClick={increment}/>
 
         </div>

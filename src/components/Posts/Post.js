@@ -7,7 +7,7 @@ const Post = (post) => {
     let body = post.post.body;
     return (
         <div>
-            <div>Id:{id} Title:{title}</div>
+            <div>PostId:{id} Title:{title}</div>
             <div>Body:{body}</div>
         </div>
     );

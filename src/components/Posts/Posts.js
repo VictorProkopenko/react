@@ -8,13 +8,11 @@ const Posts = ({count, onIncrementClick}) => {
 
         useEffect(() => {
             if (count !== 0) {fetchUser.getPost(count).then(value => setPosts(value));}
-            // fetchUser.getPost(count).then(value => setPosts(value));
         },[count]);
 
     return (
         <div >
             <button onClick={onIncrementClick}> Posts</button>
-            {console.log("Post id", count)}
             <div>
             {count !== 0 && posts.map(post => <Post key={post.id} post={post} />)}
             </div>
