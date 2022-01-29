@@ -5,16 +5,18 @@ import {fetchUser} from "../../services/user.service";
 import Post from "./Post";
 const Posts = ({count, onIncrementClick}) => {
         const [posts, setPosts] = useState([]);
-
+        console.log(posts);
         useEffect(() => {
-            if (count !== 0) {fetchUser.getPost(count).then(value => setPosts(value));}
+            fetchUser.getPost(count).then(value => setPosts(value));
+            console.log('fetch',count);
         },[count]);
 
     return (
         <div>
-            <button onClick={onIncrementClick}> Posts</button>
+            <button onClick={onIncrementClick}> Get Posts</button>
             <div>
-                {count !== 0 && posts.map(post => <Post key={post.id} post={post}/>)}
+                {posts.map(post => <Post key={post.id} post={post}/>)}
+
             </div>
         </div>
     );
