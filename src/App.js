@@ -15,23 +15,14 @@ function App() {
         setClickPost({clickPost});
     };
 
-    // const [count, setCount] = useState(0)
-    // const increment = () => setCount(c => c + 1)
-
     return (
         <div className="App">
             <div className="Users"><Users getUser={getUser}/></div>
             {clickUser && <div className="Users"><Details clickUser={clickUser} /></div>}
             {/*{clickPost && <div className="Posts"><Posts clickPost={clickPost}/></div>}*/}
-            <div>
-
-                {/*<Posts count={count} onIncrementClick={increment} />*/}
-
-            </div>
         </div>
     );
 }
-
 
 export default App;
 

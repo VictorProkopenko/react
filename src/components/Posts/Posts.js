@@ -1,21 +1,23 @@
-
+import '../../App.css';
 import React, {useEffect, useState} from 'react';
 import {fetchUser} from "../../services/user.service";
-// import Post from "./Post";
 
+import Post from "./Post";
 const Posts = ({count, onIncrementClick}) => {
-    const [posts, setPosts] = useState([]);
+        const [posts, setPosts] = useState([]);
 
-        // useEffect(() => {
-        // postsfetchUser.getPost(count).then(value => setPosts(value))
-        // },[]);
+        useEffect(() => {
+            if (count !== 0) {fetchUser.getPost(count).then(value => setPosts(value));}
+            // fetchUser.getPost(count).then(value => setPosts(value));
+        },[count]);
 
     return (
-        <div>
+        <div >
             <button onClick={onIncrementClick}> Posts</button>
-            {count && console.log("Post id", count)}
-            {count && console.log("Posts", posts)}
-            {/*{posts.map(post => <Post key={id} post={post} getPosts = {getPosts}/>)}*/}
+            {console.log("Post id", count)}
+            <div>
+            {count !== 0 && posts.map(post => <Post key={post.id} post={post} />)}
+            </div>
         </div>
     );
 };

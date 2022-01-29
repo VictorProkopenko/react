@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Post = () => {
+const Post = (post) => {
+
+    let id = post.post.id;
+    let title = post.post.title;
+    let body = post.post.body;
     return (
         <div>
-            Post
+            <div>Id:{id} Title:{title}</div>
+            <div>Body:{body}</div>
         </div>
     );
 };
