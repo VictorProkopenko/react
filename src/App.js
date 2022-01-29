@@ -10,16 +10,13 @@ function App() {
     const getUser = (clickUser) => {
         setClickUser(clickUser);
     };
-    const [clickPost, setClickPost] = useState(null)
-    const getPost = (clickPost) => {
-        setClickPost({clickPost});
-    };
-
+    const [count, setCount] = useState(0);
+    const increment = () => setCount(parseInt(clickUser.id));
     return (
         <div className="App">
             <div className="Users"><Users getUser={getUser}/></div>
             {clickUser && <div className="Users"><Details clickUser={clickUser} /></div>}
-            {/*{clickPost && <div className="Posts"><Posts clickPost={clickPost}/></div>}*/}
+            {clickUser && <div className="Posts"><Posts count={count} onIncrementClick={increment}/></div>}
         </div>
     );
 }

@@ -11,10 +11,10 @@ const Posts = ({count, onIncrementClick}) => {
         },[count]);
 
     return (
-        <div >
+        <div>
             <button onClick={onIncrementClick}> Posts</button>
             <div>
-            {count !== 0 && posts.map(post => <Post key={post.id} post={post} />)}
+                {count !== 0 && posts.map(post => <Post key={post.id} post={post}/>)}
             </div>
         </div>
     );

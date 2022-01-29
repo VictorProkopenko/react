@@ -21,7 +21,7 @@
     flex-grow: 0;
     float: none;
     background-color: lightblue;
-    column-count: 3;
+    column-count: 1;
     display: block;
     width: 97vw;
     border: 2px solid rgb(79,185,227);
