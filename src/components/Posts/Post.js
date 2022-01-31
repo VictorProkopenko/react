@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Post = (post) => {
-
     let id = post.post.id;
     let title = post.post.title;
     let body = post.post.body;

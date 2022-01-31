@@ -8,12 +8,12 @@ import {fetchUser} from "./services/user.service";
 
 function App() {
     const [clickUser, setClickUser] = useState(null)
-    const getUser = (clickUser) => {setClickUser(clickUser); setPosts([])};
+    const getUser = (clickUser) => {setClickUser(clickUser); setPosts([]); setCount(0)};
     const [count, setCount] = useState(0);
     const increment = () => setCount(parseInt(clickUser.id));
     const [posts, setPosts] = useState([]);
     useEffect(() => {
-        if (count) { fetchUser.getPost(count).then(value => setPosts(value)); console.log('fetch',count);}
+         fetchUser.getPost(count).then(value => setPosts(value));
     },[count]);
 
     return (
