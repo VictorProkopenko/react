@@ -11,7 +11,9 @@ function App() {
     const [filter, setFilter] = useState([]);
 
     useEffect(() => {
-        fetchUsers.getAll().then(value => {setUsers(value) setFilter(value)});
+        fetchUsers.getAll().then(value => {
+            setUsers(value)
+            setFilter(value)});
     },[]);
 
 
