@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 const Form = () => {
     const [form, setForm] = useState({name: '', username: '', email: ''});
+
     return (
         <div>
             <form>

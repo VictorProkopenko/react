@@ -7,8 +7,8 @@ import {fetchUsers} from "./services/users.services";
 
 function App() {
 
-    const [users, setUsers] = useState([]);
     const [filter, setFilter] = useState([]);
+    const [users, setUsers] = useState([]);
 
     useEffect(() => {
         fetchUsers.getAll().then(value => {
@@ -16,13 +16,25 @@ function App() {
             setFilter(value)});
     },[]);
 
+    const setFilterUser = (value) => {
+        let afterFilterArray = [...users];
+
+        // var result = data.filter(function(e) {
+        //     return [5, 6].includes(e.term_id) && e.type == 'car'
+        // });
+
+        afterFilterArray = afterFilterArray.filter(function(e) {
+            return e.name === users.name ;
+        })
+        setFilter(afterFilterArray)
+    }
 
 
     return (
         <div className="App">
 
-            <Form/>
-            <Users/>
+            <Form setFilterUser={setFilterUser}/>
+            <Users />
 
         </div>
     );
